@@ -1,0 +1,11 @@
+openshift_cluster_content:
+- object: projectrequest
+  content:
+  - name: coolstore
+    file: "{{ inventory_dir }}/../projectrequests/coolstore.yml"
+- object: demo
+  content:
+  - name: coolstore
+    template: "https://raw.githubusercontent.com/jbossdemocentral/coolstore-microservice/1.1.x/openshift/coolstore-template.yaml"
+    params: "{{ inventory_dir }}/../params/coolstore"
+    namespace: coolstore
