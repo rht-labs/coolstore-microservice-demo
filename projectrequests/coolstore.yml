@@ -1,7 +1,0 @@
----
-apiVersion: v1
-kind: ProjectRequest
-metadata:
-  name: coolstore
-description:
-displayName: 'Cool Store Microservices Demo'
