@@ -1,8 +1,12 @@
+---
+
 openshift_cluster_content:
 - object: projectrequest
   content:
   - name: coolstore
-    file: "{{ inventory_dir }}/../projectrequests/coolstore.yml"
+    template: "https://raw.githubusercontent.com/redhat-cop/cluster-lifecycle/master/files/projectrequest/template.yml"
+    params: "{{ inventory_dir }}/../params/projectrequest"
+    template_action: create
 - object: demo
   content:
   - name: coolstore

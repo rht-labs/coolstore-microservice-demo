@@ -1,4 +1,4 @@
 - src: https://github.com/redhat-cop/casl-ansible
   scm: git
-  version: master
+  version: v3.6.1
   name: casl-ansible
